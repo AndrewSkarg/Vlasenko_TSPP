@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+
+}
+
+.text {
+    padding: 10px;
+
+    
+}
+
+.lRegDiv{
+    display: inline-block; 
+    width: 150px;
+    padding: 10px;
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: rgba(218, 206, 206, 0.5);
+    padding-bottom: 60px;
+}
+
+.name {
+    margin-left: 20px;
+    color: white;
+    font-size: medium;
+}
+
+.bookDivs {
+    width: 100%;
+    padding: 6px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(50, 50, 246, 0.507);
+    padding: 10px 40px;
+}
+
+#hr_head {
+    border: 2px solid rgb(207, 29, 29);
+}
+
+.hr_book {
+    border: 1px solid rgb(56, 29, 207);
+}
+
+.cent {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    border: 2px solid rgb(145, 145, 145);
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.book {
+
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    border-color: blue;
+    border-bottom: 5px solid blue;
+}
+
+.login h2 {
+    text-align: center;
+    background-color: rgb(0, 213, 255);
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+#pas {
+    margin-left: 32px;
+}
+
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin:auto auto ;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer p {
+    padding-top: 22px;
+    text-align: center;
+    color: white;
+}
+
+
+#login {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+p {
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    border: 3px solid brown;
+}
+
+
+
+.right_text {
+    text-decoration: underline;
+    font-size: 12px;
+    color: green;
+    float: right;
+}
+
+a {
+    font-style: italic;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    padding-top: 20px;
+    text-decoration: underline;
+    color: blue;
+    margin-left: 30px;
+}
+
+
+
+/* .book{
+    display: ;
+} */
+
+
+
+
+
+/* .header{
+    background: aqua;
+    top: 0px;
+    align-items: center;
+} */
+
+
+/* 
+a{
+    padding: 10px;
+}
+#aLog{
+    right: 30px;
+}
+#aReg{
+    right: 100px;
+} */
