@@ -26,15 +26,14 @@
 
 
     <div class="git" >
-        <div style="width: 33.3%;">
+        <div style="width: 25%;">
             <h2 style="color: rgb(0, 145, 255);">Create a Repository</h2>
                 <br>
                 From scratch -- Create a new local repository
-                    <div class="com">$ git init [project name]</div>
-                <br>
+                    <div class="com">$ git init [project name]</div><br>
                 Download from existing repository
-                    <div class="com">$ git clone my url</div>
-                <br>
+                    <div class="com">$ git clone my url</div><br>
+
             <h2 style="color: rgb(76, 0, 255);">Observe your Repository</h2>
                 <br>
                 List new or modified files not yet commited
@@ -55,9 +54,30 @@
                     <div class="com">$ git log -p [file/directory]</div><br>
                             
         </div>
-        
-        <div style="width: 33.3%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam odit aliquam doloremque officiis quis, unde quod? A quas velit illum veniam! Dolore, voluptates laborum! Facere dolore praesentium, adipisci nobis consequuntur veniam nemo distinctio possimus porro dolorum qui repellendus pariatur tempora ipsa fuga est error iusto quam explicabo excepturi reiciendis? Sunt modi quas in at sed praesentium nisi laudantium aliquid?</div>
-        <div style="width: 33.3%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam odit aliquam doloremque officiis quis, unde quod? A quas velit illum veniam! Dolore, voluptates laborum! Facere dolore praesentium, adipisci nobis consequuntur veniam nemo distinctio possimus porro dolorum qui repellendus pariatur tempora ipsa fuga est error iusto quam explicabo excepturi reiciendis? Sunt modi quas in at sed praesentium nisi laudantium aliquid?</div>
+
+        <div style="width: 25%;">
+            <h2 style="color: rgb(0, 255, 81);">Working with Branches</h2>
+                <br>
+                List all local branches
+                <div class="com">$ git branch</div><br>
+                List all branches,local and remote
+                <div class="com">$ git branch -av</div><br>
+                Switch to a branch, my_branch, and update working directory
+                <div class="com">$ git checkout my_branch</div><br>
+                Create a new branch called new_branch
+                <div class="com">$ git branch new_branch</div><br>
+                Delete the branch called my_branch
+                <div class="com">$ git branch -d my_branch</div><br>
+                Merge branch_a into branch_b
+                <div class="com">$ git checkout branch_b</div>
+                <div class="com">$ git merge branch_a</div><br>
+                Tag the current commit
+                <div class="com">$ git tag my_tag</div><br>
+        </div>
+
+
+        <div style="width: 25%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam odit aliquam doloremque officiis quis, unde quod? A quas velit illum veniam! Dolore, voluptates laborum! Facere dolore praesentium, adipisci nobis consequuntur veniam nemo distinctio possimus porro dolorum qui repellendus pariatur tempora ipsa fuga est error iusto quam explicabo excepturi reiciendis? Sunt modi quas in at sed praesentium nisi laudantium aliquid?</div>
+        <div style="width: 25%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam odit aliquam doloremque officiis quis, unde quod? A quas velit illum veniam! Dolore, voluptates laborum! Facere dolore praesentium, adipisci nobis consequuntur veniam nemo distinctio possimus porro dolorum qui repellendus pariatur tempora ipsa fuga est error iusto quam explicabo excepturi reiciendis? Sunt modi quas in at sed praesentium nisi laudantium aliquid?</div>
 
     </div>
 
