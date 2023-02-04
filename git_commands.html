@@ -27,16 +27,35 @@
 
     <div class="git" >
         <div style="width: 33.3%;">
-            <h2 style="color: rgb(0, 119, 255);">Create a Repository</h2>
+            <h2 style="color: rgb(0, 145, 255);">Create a Repository</h2>
                 <br>
                 From scratch -- Create a new local repository
-                <div class="com">$ git init [project name]</div>
+                    <div class="com">$ git init [project name]</div>
                 <br>
                 Download from existing repository
-                <div class="com">$ git clone my url</div>
+                    <div class="com">$ git clone my url</div>
                 <br>
-            
+            <h2 style="color: rgb(76, 0, 255);">Observe your Repository</h2>
+                <br>
+                List new or modified files not yet commited
+                    <div class="com">$ git status</div><br>
+                Show the changes to staged files
+                    <div class="com">$ git diff --cached</div><br>
+                Show all staged and unstaged file changes
+                    <div class="com">$ git diff HEAD</div><br>
+                Show the changes between two commit ids
+                    <div class="com">$ git diff commit1 commit2</div><br>
+                List the change dates and authors for a life
+                    <div class="com">$ git blame [file]</div><br>
+                Show the file changes for a commit id and/or file
+                    <div class="com">$ git show [commit] : [file]</div><br>
+                Show full change history
+                    <div class="com">$ git log</div><br>
+                Show change history for file/directory including diffs
+                    <div class="com">$ git log -p [file/directory]</div><br>
+                            
         </div>
+        
         <div style="width: 33.3%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam odit aliquam doloremque officiis quis, unde quod? A quas velit illum veniam! Dolore, voluptates laborum! Facere dolore praesentium, adipisci nobis consequuntur veniam nemo distinctio possimus porro dolorum qui repellendus pariatur tempora ipsa fuga est error iusto quam explicabo excepturi reiciendis? Sunt modi quas in at sed praesentium nisi laudantium aliquid?</div>
         <div style="width: 33.3%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident nam odit aliquam doloremque officiis quis, unde quod? A quas velit illum veniam! Dolore, voluptates laborum! Facere dolore praesentium, adipisci nobis consequuntur veniam nemo distinctio possimus porro dolorum qui repellendus pariatur tempora ipsa fuga est error iusto quam explicabo excepturi reiciendis? Sunt modi quas in at sed praesentium nisi laudantium aliquid?</div>
 
