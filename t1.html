@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ui-components-modal/modal/modal.css">
+    <script src="ui-components-modal/modal/modal.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="shMod">Press to show modal</button>
+
+
+
+
+
+</body>
+
+
+<script>
+    const cont = '<form method= "get" id="sendForm" action=""> <input type="text" id="text" name="text" placeholder="Enter here..."/> <label for="text" id="error" hidden="hidden"></label> <input type="submit"  id="sendButton"> </form>';
+    const cancelBut = { class: 'btn btn__cancel', text: 'Відміна', handler: 'modalHandlerCancel', id: 'cancel' };
+
+    var modal = $modal({
+        title: 'Виберіть мову “ua” або “en”?',
+        content: cont,
+        footerButtons: cancelBut, footerButtons: [cancelBut,
+            { class: 'btn btn__ok', text: 'ОК', handler: 'modalHandlerOk', id: 'subLang' }]
+    });
+
+
+    document.querySelector('#shMod').addEventListener('click', function (e) {
+        modal.show();
+    });
+
+    document.getElementById('subLang').addEventListener('click', function (e) {
+
+        let editT = document.getElementById('text');
+        var lang = editT.value.toLowerCase();
+        if (lang === 'ua') {
+            var modUA = $modal({
+                title: 'Введіть номер дня неділі від 1 до 7?', content: cont, footerButtons: [cancelBut,
+                    { class: 'btn btn__ok', text: 'ОК', handler: 'modalHandlerOk', id: 'ua', onclick: "day()" }]
+            });
+            modUA.show();
+        }
+        else if (lang === 'en') {
+            var modEN = $modal({
+                title: 'Enter the day number of the week (from 1 to 7)?', content: cont, footerButtons: [cancelBut,
+                    { class: 'btn btn__ok', text: 'ОК', handler: 'modalHandlerOk', id: 'en', onclick: "day()" }]
+            });
+            modEN.show();
+        }
+
+        else {
+                let label = document.getElementById('error');
+                label.innerHTML = "Помилка! Error!"
+                label.removeAttribute('hidden');
+            }
+
+        });
+    
+
+        document.getElementById('en').addEventListener('click', day());
+        document.getElementById('ua').addEventListener('click', day());
+
+
+    function day() {
+        alert(document.getElementById('text').value);
+        if (!isNaN(document.getElementById('text'))) {
+            let en = this.id === "en" ? true : false
+            let b = '';
+            let s = '';
+
+            switch (n) {
+                case 1: b = en ? "Monday" : "понеділок";
+                    break;
+                case 2: b = en ? "Tuesday" : "вівторок";
+                    break;
+                case 3: b = en ? "Wednesday" : "середа";
+                    break;
+                case 4: b = en ? "Thursday" : "четвер";
+                    break;
+                case 5: b = en ? "Friday" : "п'ятниця";
+                    break;
+                case 6: b = en ? "Saturday" : "субота";
+                    break;
+                case 7: b = en ? "Sunday" : "неділя";
+                    break;
+
+            }
+
+            en ? modEN.setContent(b).show() : modUA.setContent(b).show();
+
+
+
+        }
+    }
+
+
+
+    document.getElementById('cancel').addEventListener('click', function (e) {
+
+    });
+
+
+
+</script>
+
+</html>
