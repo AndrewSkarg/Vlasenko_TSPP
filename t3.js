@@ -1,4 +1,5 @@
 class Random {
+
     static nextDouble(low, high) {
         return Math.random() * (high - low) + high;
     }
@@ -13,4 +14,6 @@ class Random {
         return arr[Random.nextInt(0, arr.length - 1)]
     }
 }
+const r=Random.nextElement([4,8,6,3]);
+console.log(r);
 
