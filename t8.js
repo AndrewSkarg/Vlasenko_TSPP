@@ -3,10 +3,10 @@
 class MyTask{
       
     constructor (name, desrp, stDate,finDate) {
-        this.name=name;
-        this.desrp=desrp;
-        this.stDate=stDate;
-        this.finDate=finDate;
+        this._name=name;
+        this._desrp=desrp;
+        this._stDate=stDate;
+        this._finDate=finDate;
     }
    
     getText() {
@@ -34,6 +34,7 @@ class ExecutedTask extends MyTask{
 ExecutedTask.prototype.toString=function(){
   return this.getText()+"Відсоток виконання: "+this.percentExec+"%"+"\n"+(this.isFinished==true?"Робота завершена":"В процесі")+";\n"
 }
+
 
 let t1=new ExecutedTask("t1","difficult",new Date(1998,2,12),new Date(1998,4,12),50);
 let t2=new ExecutedTask("t2","very difficult",new Date(1998,6,12),new Date(1998,8,12),100);
