@@ -7,15 +7,16 @@ let random = getRandom(0, 100);
 let flag = true;
 let conf = true;
 let countTry = 0;
-while (conf == true) {
+won=false;
+while (conf == true && won==false) {
+    countTry++;
     let entered = prompt('guess the number from 0 to 100');
     if (entered > random) {
         entered = random - (entered - random);
     }
     if (entered == random) {
-        countTry++;
         alert('Ви вгадали за ' + countTry + ' разів!');
-        break;
+        won=true;
     }
     else if (flag && entered <= 1 / 8 * random || entered < 2 / 8 * random) {
         conf = confirm("дуже холодно")
@@ -51,5 +52,11 @@ while (conf == true) {
         flag = false;
 
     }
-    countTry++;
+    let now = new Date();//?
+    let day = now.getDay();//?
+    let month= now.getMonth();//?
+    let time=now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()//?
+    let txt=won==true?'вірно':'не вірно';
+    let date =day+now.getDate()+' '+month+' '+now.getFullYear()+' '+time+' Спроба '+countTry+': число '+entered+' - '+txt;
+    console.log(date);
 }
