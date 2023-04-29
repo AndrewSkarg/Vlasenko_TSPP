@@ -1,0 +1,14 @@
+{
+  "name": "t1",
+  "version": "1.0.0",
+  "description": "commander module",
+  "main": "t1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andriy",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
+}
